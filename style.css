@@ -83,6 +83,10 @@ body{
     inset 10px 10px 100px rgba(56, 169, 255, 0.467); 
 }
 
+.screen{
+    background: linear-gradient(to bottom, rgb(2, 2, 2), rgb(92, 222, 222));
+}
+
 
 
 /* ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ X ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ */
@@ -194,7 +198,7 @@ body{
 @media(max-device-width: 420px){
     .clock{
         height:38vh;
-        width: 65vw;
+        width: 70vw;
         margin-top: 5rem;
     }
     .lowerBracelet,.upperBracelet{
