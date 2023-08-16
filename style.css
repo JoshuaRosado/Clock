@@ -191,3 +191,96 @@ body{
 }
 
 
+@media (max-width: 576px){
+    .lowerBracelet, .upperBracelet{
+        width: 22.5vw;
+        height: 65vh;
+    }
+
+    .clock{ 
+        position: relative;
+        height: 250px;
+        margin-top: 6rem;
+        width: 45vw;
+    }
+    .number{
+        font-size: 1.8rem;
+    }
+
+    .num12{
+        position: absolute;
+        right: 15%;
+        top: 18%;
+    }
+
+    .num6{
+        position: absolute;
+        right: 16% ;
+        bottom: 0%;
+    }
+    .num3{
+        position: absolute;
+        left: 95% ;
+        bottom: 14.5%;
+    }
+    .num9{
+        position: absolute;
+        right: 55%;
+        bottom: 15%;
+    }
+    .circle{
+        position: absolute;
+        top: 50%;
+        left: 51%;
+    }
+    .hours{
+        width: 10px;
+    }
+    .minutes{
+        width: 5px;
+    }
+}
+/* 
+@media (max-width: 768px){
+    .lowerBracelet, .upperBracelet{
+        width: 22.5vw;
+        height: 65vh;
+    }
+
+    .clock{ 
+        position: relative;
+        height: 250px;
+        margin-top: 6rem;
+        width: 45vw;
+    }
+    .number{
+        font-size: 1.8rem;
+    }
+
+    .num12{
+        position: absolute;
+        right: 25%;
+        top: 18%;
+    }
+
+    .num6{
+        position: absolute;
+        right: 26% ;
+        bottom: 0%;
+    }
+    .num3{
+        position: absolute;
+        left: 95% ;
+        bottom: 14.5%;
+    }
+    .num9{
+        position: absolute;
+        right: 55%;
+        bottom: 15%;
+    }
+    .circle{
+        position: absolute;
+        top: 50%;
+        left: 51%;
+    }
+} */
