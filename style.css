@@ -190,10 +190,11 @@ body{
 
 }
 
-@media(max-device-width: 480px){
+
+@media(max-device-width: 420px){
     .clock{
-        height:40vh;
-        width: 60vw;
+        height:38vh;
+        width: 65vw;
         margin-top: 5rem;
     }
     .lowerBracelet,.upperBracelet{
@@ -230,6 +231,48 @@ body{
 
 }
 
+@media (min-width:420px) and (max-width:480px){
+    .clock{
+        height:38vh;
+        width: 65vw;
+        margin-top: 5rem;
+    }
+    .lowerBracelet,.upperBracelet{
+        height: 30rem;
+        width: 30vw;
+    }
+    .num12{
+        position: relative;
+        bottom: 20%;
+    }
+    .num3{
+        position: relative;
+        left: 65%;
+    }
+
+    .num6{
+        position: relative;
+        top: 55%;
+    }
+    .num9{
+        position: relative;
+        right: 55%;
+    }
+    .minutes{
+        width: .4rem;
+    }
+    .hours{
+        width: .7rem;
+    }
+    .circle{
+        position: absolute;
+        top: 50%;
+    }
+
+}
+    
+
+
 
 @media (min-width: 480px) and (max-width: 576px){
     .lowerBracelet, .upperBracelet{
@@ -241,22 +284,22 @@ body{
         position: relative;
         height: 250px;
         margin-top: 6rem;
-        width: 45vw;
+        width: 50vw;
     }
     .number{
         font-size: 1.8rem;
     }
 
     .num12{
-        position: absolute;
-        right: 15%;
-        top: 18%;
+        position: relative;
+        left: 30%;
+        bottom: 15%;
     }
 
     .num6{
-        position: absolute;
-        right: 16% ;
-        bottom: 0%;
+        position: relative;
+        left: 5% ;
+        top: 58%;
     }
     .num3{
         position: absolute;
