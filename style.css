@@ -190,8 +190,48 @@ body{
 
 }
 
+@media(max-device-width: 480px){
+    .clock{
+        height:40vh;
+        width: 60vw;
+        margin-top: 5rem;
+    }
+    .lowerBracelet,.upperBracelet{
+        height: 30rem;
+        width: 30vw;
+    }
+    .num12{
+        position: relative;
+        bottom: 20%;
+    }
+    .num3{
+        position: relative;
+        left: 65%;
+    }
 
-@media (max-width: 576px){
+    .num6{
+        position: relative;
+        top: 55%;
+    }
+    .num9{
+        position: relative;
+        right: 55%;
+    }
+    .minutes{
+        width: .4rem;
+    }
+    .hours{
+        width: .7rem;
+    }
+    .circle{
+        position: absolute;
+        top: 50%;
+    }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 576px){
     .lowerBracelet, .upperBracelet{
         width: 22.5vw;
         height: 65vh;
