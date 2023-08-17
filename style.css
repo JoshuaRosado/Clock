@@ -5,36 +5,38 @@
 }
 
 body{
-
     display: flex;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, rgb(201, 194, 194) 1%, rgb(142, 209, 202))
+    min-width: 60rem;
+    min-height: 60rem;
+    background: linear-gradient(to right, rgb(201, 194, 194) 1%, rgb(142, 209, 202));
+    background-size: contain;
 }
 .container{
+    min-height: 10rem;
+    position: relative;
+    top: -32rem;
     display: flex;
-    align-items: center;
+    margin: 20rem;
     justify-content: center;
-    border-radius: 100px;
+    min-width: 60rem; 
 }
 
 /* ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ UPPER AND LOWER BRACELET ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ */
 
 .upperBracelet{
     width: 210px;
-    height: 500px;
+    height: 45rem;
     background:linear-gradient(to top,rgb(255, 255, 255), black 200%) ;
-    position: relative;
-    bottom: 15px;
-    right: 30px;
+    display: flex;
     z-index: 1;
     box-shadow: 30px 30px 30px 10px rgba(0,0,0,.605),
     inset 15px 15px 10px rgba(255, 255, 255, 0.75),
     -15px -15px 35px rgba(255, 255, 255, 0.50),
     inset -1px -1px 10px rgba(0,0,0, 9.9);
-    transform: translate(50px, -50px);
+    transform: translate(0px, -50px);
     border-bottom: 5px solid white;
     border-radius: 10%;
 }
@@ -43,17 +45,13 @@ body{
     border-top: 5px solid white;
     border-radius: 10%;
     width: 210px;
-    height: 500px;
+    height: 30rem;
     background:linear-gradient(to bottom,rgb(255, 255, 255), black 200%) ;
     box-shadow: 30px 30px 30px 10px rgba(0,0,0,.605),
     inset 15px 15px 10px rgba(255, 255, 255, 0.75),
     -15px -15px 35px rgba(255, 255, 255, 0.50),
     inset -1px -1px 35px rgba(0,0,0, 9.9);
-    position: relative;
-    top:-15px;
-    right: -70px;
     z-index: 1;
-    transform: translate(-50px, -50px);
 }
 
 /* ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ X ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ */
@@ -62,20 +60,17 @@ body{
 .clock{
 
     border-radius: 20%;
-    z-index: 2;
+    z-index: 0;
     border-top: 5px solid rgb(76, 74, 74);
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.374);
     height: 415px;
     width: 400px;
-    margin: 10px;
     position:relative;
     top: -50rem;
-    left: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.983) 500%, rgba(255, 255, 255, 0.163)) ;
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.983) 500%, rgba(255, 255, 255, 0.163)) ; 
     box-shadow: 40px 5px 20px 10px rgba(0, 0, 0, 0.566),
     inset 15px 15px 10px rgba(255, 255, 255, 0.43),
     -15px -15px 35px rgba(255, 255, 255, 0.268),
@@ -155,25 +150,17 @@ body{
     transform: translate(-50px, -50px);
 }
 .num12{
-    position: relative;
-    bottom: 115px;
-    right: -140px;
+    transform: translate(5rem, -10rem);
 }
 .num3{
-    position: relative;
-    right: -230px;
-    bottom: -50px;
+    transform: translate(11rem, 0rem);
 
 }
 .num6{
-    position: relative;
-    top: 220px;
-    right: -15px;
+    transform: translate(-3rem, 10rem);
 }
 .num9{
-    position: relative;
-    right: 200px;
-    bottom: -50px;
+    transform: translate(-16rem, 0rem);
 }
 
 /* ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ X ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ */
@@ -184,17 +171,14 @@ body{
     background: linear-gradient(to right, rgb(244, 244, 244), rgb(13, 16, 40));
     height: 25px;
     width: 25px;
-    position: absolute;
-    left: 50.5%;
-    bottom: 43.5%;
     border-radius: 30%;
-    z-index: 10;
-    transform: translate(-50%, -50%);
+    z-index: 100;
+    transform: translate(8rem, 0rem);
 
 
 }
 
-
+/* 
 @media(max-device-width: 420px){
     .clock{
         height:38vh;
@@ -326,7 +310,7 @@ body{
     .minutes{
         width: 5px;
     }
-}
+} */
 /* 
 @media (max-width: 768px){
     .lowerBracelet, .upperBracelet{
