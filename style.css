@@ -66,14 +66,25 @@ body{
     background: url(./imgs/pexels-photo-1037992.webp);
     background-size: cover;
     background-position: center;
-    animation: bg  5s linear;
+    animation: bg  10s  linear;
     color: rgba(49, 49, 49, 0.65);
 }
 
+/* @keyframes bg {
+    0%{background:  url(./imgs/matcha.jpeg);    background-size: cover;
+    background-position: center;}
+    50%{background:  url(./imgs/pexels-photo-1037992.webp);    background-size: cover;
+    background-position: center;}
+    100%{background:  url(./imgs/pexels-photo-5726030.webp);    background-size: cover;
+    background-position: center;}
+
+} */
+
 @keyframes bg {
-    0%{background: rgb(255, 255, 255) ; color: rgba(185, 28, 88, 0.404); }
-    50%{background: rgb(119, 106, 106) ; color: bisque;}
-    75%{background: url(./imgs/pexels-photo-1037992.webp); background-size:contain; background-position:60rem; color: rgba(172, 255, 47, 0.439); }
+    0%{background: linear-gradient(to bottom,rgba(105, 159, 170, 0.536),rgba(112, 112, 112, 0.652)); color: rgb(181, 213, 123); }
+    25%{background: rgba(0, 0, 0, 0.65) ; color: bisque;}
+    50%{background: url(./imgs/window.jpeg); background-size:cover; background-position:center; color: rgba(172, 255, 47, 0.439); }
+    75%{background: url(./imgs/pexels-photo-5726030.webp); background-size:contain; background-position:60rem; color: rgba(172, 255, 47, 0.439); }
     100%{background: url(./imgs/pexels-photo-1037992.webp); background-size: contain; background-position: center; color: rgba(127, 255, 212, 0.451);}
 }
 
