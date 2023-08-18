@@ -9,19 +9,19 @@ body{
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    min-width: 40rem;
-    min-height: 1rem;
+    min-width: 20rem;
+    min-height: 30rem;
     background: linear-gradient(to right, rgb(201, 194, 194) 1%, rgba(142, 209, 202, 0.728));
     background-size: contain;
 }
 .container{
-    min-height: 2rem;
+    min-height: 2rem;   
     position: relative;
     top: -32rem;
     display: flex;
     margin: 20rem;
     justify-content: center;
-    min-width: 10rem; 
+    min-width: 1rem; 
 }
 
 /* ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ UPPER AND LOWER BRACELET ∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆ */
@@ -48,7 +48,7 @@ body{
     border-radius: 20%;
     border-top: 5px solid rgb(76, 74, 74);
     border-bottom: 2.5px solid rgba(0, 0, 0, 0.374);
-    height: 415px;
+    min-height: 415px;
     min-width: 400px;
     display: flex;
     align-items: center;
@@ -186,6 +186,10 @@ body{
 
 
 @media (min-width: 320px) and (max-width: 480px){
+    .container{
+        height: 100px;
+        width: 100rem;
+    }
     .Bracelet{
         height: 100rem;
     }
