@@ -10,12 +10,13 @@ body{
     justify-content: center;
     align-items: center;
     min-width: 20rem;
-    min-height: 30rem;
     background: linear-gradient(to right, rgb(201, 194, 194) 1%, rgba(142, 209, 202, 0.728));
     background-size: contain;
 }
 .container{
     min-height: 2rem;   
+    padding-left: 4rem;
+    padding-right: 4rem;
     position: relative;
     top: -32rem;
     display: flex;
@@ -187,13 +188,13 @@ body{
 
 @media (min-width: 320px) and (max-width: 480px){
     .container{
-        height: 100px;
-        width: 100rem;
+        min-height: 60rem;
+        min-width:  10rem;
     }
     .Bracelet{
         height: 100rem;
     }
     .clock{
-        transform: translate(0rem, -70rem);
+        transform: translate(0rem, -75rem);
     }
 }
